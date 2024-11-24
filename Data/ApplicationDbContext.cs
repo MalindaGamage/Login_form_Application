@@ -1,7 +1,7 @@
-﻿using Interview_project.Models;
+﻿using Login_form_Project.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Interview_project.Data
+namespace Login_form_Project.Data
 {
     public class ApplicationDbContext : DbContext
     {

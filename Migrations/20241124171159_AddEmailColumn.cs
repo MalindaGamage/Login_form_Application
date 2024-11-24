@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Interview_project.Migrations
+namespace Login_form_Project.Migrations
 {
     /// <inheritdoc />
     public partial class AddEmailColumn : Migration

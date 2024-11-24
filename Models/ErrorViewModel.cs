@@ -1,4 +1,4 @@
-namespace Interview_project.Models
+namespace Login_form_Project.Models
 {
     public class ErrorViewModel
     {

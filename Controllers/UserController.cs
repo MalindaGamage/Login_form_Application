@@ -1,5 +1,5 @@
-﻿using Interview_project.Data;
-using Interview_project.Models;
+﻿using Login_form_Project.Data;
+using Login_form_Project.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -8,7 +8,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Interview_project.Controllers
+namespace Login_form_Project.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
