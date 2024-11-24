@@ -6,6 +6,17 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000") // Allow React app origin
+              .AllowAnyMethod() // Allow all HTTP methods (GET, POST, PUT, DELETE, etc.)
+              .AllowAnyHeader(); // Allow all headers
+    });
+});
+
 // Add services to the container.
 builder.Services.AddControllersWithViews(); // <-- Use AddControllersWithViews for Razor Views and Controllers
 
@@ -35,6 +46,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 var app = builder.Build();
+app.UseCors("AllowReactApp");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

@@ -18,4 +18,15 @@
     <PackageReference Include="Xunit" Version="2.8.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\reactfrontend\public\index.html">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\reactfrontend\src\index.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
